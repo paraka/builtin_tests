@@ -42,11 +42,11 @@ PBIT_TEST(pbit1)
 ```
 
 Where:
-    - tc_pbit1 is the pbit const reference inside the library (shall be unique).
-    - PBIT1_NAME: defined name to identify the pbit.
-    - pbit1_setup: setup function for the pbit (if any, set to 0 in any other case).
-    - pbit1_teardown: teardown function for the pbit (if any, set to 0 in any other case).
-    - pbit1_run: performs the pbit.
+* tc_pbit1 is the pbit const reference inside the library (shall be unique).
+* PBIT1_NAME: defined name to identify the pbit.
+* pbit1_setup: setup function for the pbit (if any, set to 0 in any other case).
+* pbit1_teardown: teardown function for the pbit (if any, set to 0 in any other case).
+* pbit1_run: performs the pbit.
 
 As you can guess this is always executed in the following order:
 
