@@ -1,7 +1,7 @@
 # Description
 
 Builtin tests is being used to test some hardware and other critical
-stuff to decrease the probably of get a unexpected critical failure.
+stuff to decrease the probably of get an unexpected critical failure.
 This library is a simple library to provide a common and general way
 to write simple builtin test at boot and also retrieve its results and
 rerun on normal system runtime providing for example the continuous bit
@@ -31,7 +31,7 @@ struct pbit1_data
 ```
 
 Create an implementation file for the pbit and define the pbit test
-itself and its related fnctions using PBIT_TEST(name) library helper:
+itself and its related functions using *PBIT_TEST(name)* library helper:
 
 ```
 PBIT_TEST(pbit1)
@@ -42,11 +42,11 @@ PBIT_TEST(pbit1)
 ```
 
 Where:
-* tc_pbit1 is the pbit const reference inside the library (shall be unique).
-* PBIT1_NAME: defined name to identify the pbit.
-* pbit1_setup: setup function for the pbit (if any, set to 0 in any other case).
-* pbit1_teardown: teardown function for the pbit (if any, set to 0 in any other case).
-* pbit1_run: performs the pbit.
+* *tc_pbit1*: is the pbit const reference inside the library (shall be unique).
+* *PBIT1_NAME*: defined name to identify the pbit.
+* *pbit1_setup*: setup function for the pbit (if any, set to 0 in any other case).
+* *pbit1_teardown*: teardown function for the pbit (if any, set to 0 in any other case).
+* *pbit1_run*: performs the pbit.
 
 As you can guess this is always executed in the following order:
 
@@ -95,8 +95,8 @@ PBIT_TEST(pbit1)
 
 There are two macros to say the library we are ok or something was wrong (both of them
 need the data to be passed to store it within the library):
-    * PBIT_SET_OK(data)
-    * PBIT_SET_FAIL(data)
+* *PBIT_SET_OK(data)*
+* *PBIT_SET_FAIL(data)*
 
 And that's all. For more information see *sample* directory.
 
